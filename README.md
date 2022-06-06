@@ -1,19 +1,24 @@
 # Amcef testovacie zadanie
 
 ## Inštalacia
-Pre testovanie je potrebne mať vytvorenú lokálnu PostgreSQL databázu a v settings.py v DATABASE vyplniť údaje alebo vytvoriť .env súbor
 
-Následne nainštalovať:
-
+Vytvoriť venv:
 ```bash
-pip install django-environ
+python -m venv venv
 ```
 ```bash
-pip install requests
+source venv/bin/activate
 ```
-Po uspešnom nainštalovaní stačí zapnúť server:
+Následne nainštalovať requrements:
+```bash
+pip install -r requirements.txt
+```
+
+URL na frontende je nastavená na 127.0.0.1:7000. Pre spustenie servera:
 ```bash
 py manage.py runserver 127.0.0.1:7000
 ```
+Pre testovanie som vytvoril aj jednoduchý frontend https://nemo260.github.io/amcef-frontend/ alebo je možné si stiahnuť repozitár https://github.com/nemo260/amcef-frontend otvoriť index.html a testovať tam.
+
 ## API Dokumentácia
 Na testovanie endpointov som využil Postman, v ktorom som vygeneroval dokumentáciu: [API Documentation](https://documenter.getpostman.com/view/20139116/Uz5GnbAg)
