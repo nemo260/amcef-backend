@@ -13,6 +13,10 @@ Následne nainštalovať requrements:
 ```bash
 pip install -r requirements.txt
 ```
+Ak je treba tak ešte
+```bash
+pip install django-cors-headers
+```
 
 URL na frontende je nastavená na 127.0.0.1:7000. Pre spustenie servera:
 ```bash
