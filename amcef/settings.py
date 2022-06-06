@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
 environ.Env.read_env()
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = 'django-insecure-62y6uj5_7w23t7fy&*z*!0=xozz-t9grnj7b3drgqqn446t!@i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -106,10 +106,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'db-posts',
-        'USER': os.getenv('USER'),
-        'PASSWORD': os.getenv('PASSWORD'),
-        'HOST': os.getenv('HOST'),
-        'PORT': '',
     },
 }
 DATABASE_CONNECTION_POOLING = False
